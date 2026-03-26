@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-medical-text antialiased;
+  }
+}
+
+@layer components {
+  .section-subtitle {
+    @apply text-sm font-semibold uppercase tracking-[3px] text-primary-500;
+  }
+
+  .section-title {
+    @apply font-heading text-3xl font-bold text-medical-dark md:text-4xl lg:text-[42px] lg:leading-[1.2];
+  }
+
+  .gradient-teal {
+    background: linear-gradient(135deg, #00897b 0%, #009e9e 50%, #19cd9b 100%);
+  }
+
+  .gradient-dark {
+    background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
+  }
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #00897b !important;
+  background: white;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+  background: #00897b !important;
+  opacity: 0.3 !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+/* Placeholder image styling */
+.placeholder-img {
+  @apply bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center;
+}
