@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { CalendarCheck } from 'lucide-react';
+import Link from "next/link";
+import Image from "next/image";
+import { CalendarCheck } from "lucide-react";
 
 export default function CTASection() {
   return (
@@ -26,7 +26,7 @@ export default function CTASection() {
         <div className="relative hidden md:col-span-5 md:block">
           <div className="relative aspect-[5/3] w-full overflow-hidden rounded-2xl ring-1 ring-white/20">
             <Image
-              src="/images/hero/welcoming-patients.svg"
+              src="https://images.pexels.com/photos/5234504/pexels-photo-5234504.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Our medical team"
               fill
               sizes="(min-width:768px) 40vw, 100vw"
