@@ -1,0 +1,183 @@
+// Add / edit services here. `slug` controls the URL at /services/<slug>.
+export const services = [
+  {
+    slug: 'womens-health',
+    title: "Women's Health",
+    icon: 'HeartPulse',
+    summary:
+      'Comprehensive women’s health including preventive screenings, reproductive health and menopause management.',
+    description:
+      'We provide personalised, evidence-based care to support women’s wellbeing at every stage of life — from adolescence through reproductive years and menopause and beyond. Services include cervical screening, breast checks, contraception advice, menstrual and hormonal health, fertility support, antenatal shared care and menopause management.',
+    bullets: [
+      'Cervical screening & breast checks',
+      'Contraception & reproductive health',
+      'Antenatal shared care',
+      'Menopause management',
+    ],
+    image: '/images/services/womens-health.svg',
+  },
+  {
+    slug: 'mens-health',
+    title: "Men's Health",
+    icon: 'Shield',
+    summary:
+      'Preventive screenings, cardiovascular risk assessment and prostate health management for men.',
+    description:
+      'Our focus is on early detection, lifestyle optimisation and long-term wellbeing to support men at every stage of life. We offer cardiovascular risk assessments, diabetes screening, prostate health reviews, mental health support and lifestyle coaching.',
+    bullets: [
+      'Cardiovascular risk assessment',
+      'Prostate & urological health',
+      'Diabetes & metabolic screening',
+      'Mental health & lifestyle support',
+    ],
+    image: '/images/services/mens-health.svg',
+  },
+  {
+    slug: 'kids-health',
+    title: "Kid's Health",
+    icon: 'Baby',
+    summary:
+      'Vaccinations, growth and development monitoring and treatment of common childhood illnesses.',
+    description:
+      'We care for children of all ages and prioritise early prevention and guidance to ensure every child grows up healthy and strong. Our team delivers routine immunisations, developmental reviews, childhood illness management and parenting support.',
+    bullets: [
+      'Routine childhood immunisations',
+      'Growth & developmental checks',
+      'Acute illness management',
+      'Parenting & behavioural support',
+    ],
+    image: '/images/services/kids-health.svg',
+  },
+  {
+    slug: 'travel-medicine',
+    title: 'Travel Medicine',
+    icon: 'Plane',
+    summary:
+      'Destination-specific immunisations, preventative advice and travel health planning.',
+    description:
+      'Our travel health services help you stay healthy and protected wherever your destination may be. We provide destination-specific vaccinations, malaria prevention, altitude and traveller’s diarrhoea advice and comprehensive pre-travel consultations.',
+    bullets: [
+      'Destination-specific vaccinations',
+      'Malaria prevention plans',
+      'Pre-travel health consultation',
+      'Travel medical kit guidance',
+    ],
+    image: '/images/services/travel-medicine.svg',
+  },
+  {
+    slug: 'iron-infusion',
+    title: 'Iron Infusion',
+    icon: 'Droplet',
+    summary:
+      'Safely treat iron deficiency and improve energy with monitored iron infusion therapy.',
+    description:
+      'We provide iron infusion therapy in a comfortable, monitored setting tailored to your individual needs. Our nurses and doctors assess suitability, explain the process and monitor you throughout the infusion for safety and comfort.',
+    bullets: [
+      'Assessment & pathology review',
+      'Comfortable monitored infusion',
+      'Post-infusion follow-up',
+      'Personalised dosing plans',
+    ],
+    image: '/images/services/iron-infusion.svg',
+  },
+  {
+    slug: 'immunizations',
+    title: 'Immunisations',
+    icon: 'Syringe',
+    summary:
+      'Full range of immunisations for children, adults and travel-related needs.',
+    description:
+      'Safe, effective protection to support your long-term health and wellbeing. We follow the Australian Immunisation Schedule and offer catch-up programs, workplace vaccinations and travel immunisations.',
+    bullets: [
+      'Childhood & adult schedules',
+      'Influenza & COVID-19 boosters',
+      'Workplace vaccinations',
+      'Catch-up programs',
+    ],
+    image: '/images/services/immunizations.svg',
+  },
+  {
+    slug: 'nursing-services',
+    title: 'Nursing Services',
+    icon: 'Stethoscope',
+    summary:
+      'Wound care, chronic disease support, vaccinations and health monitoring by skilled nurses.',
+    description:
+      'Our nursing team provides personalised care to promote recovery, prevention and overall wellbeing. Services include wound and dressing care, chronic disease reviews, vaccinations, ECGs, spirometry and health assessments.',
+    bullets: [
+      'Wound & dressing care',
+      'Chronic disease reviews',
+      'ECG & spirometry',
+      'Health assessments',
+    ],
+    image: '/images/services/nursing.svg',
+  },
+  {
+    slug: 'pathology-services',
+    title: 'Pathology Services',
+    icon: 'FlaskConical',
+    summary:
+      'On-site blood tests and diagnostic screenings with accurate, timely results.',
+    description:
+      'We offer comprehensive pathology services to support effective diagnosis, treatment and ongoing healthcare. Our partnership with accredited pathology providers enables convenient on-site collection and fast turnaround.',
+    bullets: [
+      'On-site blood collection',
+      'Routine & specialised tests',
+      'Fast result turnaround',
+      'Doctor-led follow-up',
+    ],
+    image: '/images/services/pathology.svg',
+  },
+  {
+    slug: 'weight-control',
+    title: 'Weight Control',
+    icon: 'Scale',
+    summary:
+      'Personalised weight management with nutrition guidance, lifestyle planning and monitoring.',
+    description:
+      'Our focus is on sustainable, healthy strategies to achieve and maintain long-term wellbeing. We offer individualised assessments, nutrition advice, behavioural coaching and medical management where appropriate.',
+    bullets: [
+      'Individualised weight plans',
+      'Nutrition & lifestyle coaching',
+      'Medical management options',
+      'Ongoing progress reviews',
+    ],
+    image: '/images/services/weight-control.svg',
+  },
+  {
+    slug: 'care-plans',
+    title: 'Care Plans',
+    icon: 'ClipboardList',
+    summary:
+      'Structured, proactive support for managing chronic conditions and coordinated care.',
+    description:
+      'We develop individualised care plans to manage chronic conditions and coordinate ongoing healthcare across allied health and specialists, ensuring better health outcomes and improved quality of life.',
+    bullets: [
+      'GP Management Plans (GPMP)',
+      'Team Care Arrangements (TCA)',
+      'Mental Health Treatment Plans',
+      'Allied health coordination',
+    ],
+    image: '/images/services/care-plans.svg',
+  },
+  {
+    slug: 'telehealth',
+    title: 'Telehealth',
+    icon: 'Video',
+    summary:
+      'Secure phone and video consultations for simple problems where examination isn’t required.',
+    description:
+      'Telehealth consultations are available for routine prescriptions, to discuss results, routine referrals and other simple problems where a physical examination is not required — giving you convenient access to your doctor.',
+    bullets: [
+      'Phone & video consultations',
+      'Routine scripts & referrals',
+      'Results discussions',
+      'Mental health follow-ups',
+    ],
+    image: '/images/services/telehealth.svg',
+  },
+];
+
+export function getService(slug) {
+  return services.find((s) => s.slug === slug);
+}

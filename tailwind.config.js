@@ -1,46 +1,56 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}',
+    './data/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#e6f7f7',
-          100: '#ccefef',
-          200: '#99dfdf',
-          300: '#66cfcf',
-          400: '#33bfbf',
-          500: '#009e9e',
-          600: '#008f8f',
-          700: '#007a7a',
-          800: '#006565',
-          900: '#004d4d',
-        },
-        accent: {
-          50: '#e8faf5',
-          100: '#d1f5eb',
-          200: '#a3ebd7',
-          300: '#75e1c3',
-          400: '#47d7af',
-          500: '#19cd9b',
-          600: '#14a47c',
-          700: '#0f7b5d',
-          800: '#0a523e',
-          900: '#05291f',
-        },
-        medical: {
-          teal: '#00897b',
-          dark: '#1a2332',
-          gray: '#f8f9fa',
-          text: '#4a5568',
+        // Derived from the clinic logo (green + blue cross)
+        brand: {
+          green: {
+            50: '#effaf1',
+            100: '#d7f2dc',
+            200: '#b1e5bd',
+            300: '#7ed195',
+            400: '#4bbb70',
+            500: '#2ea355', // primary green
+            600: '#228344',
+            700: '#1d6839',
+            800: '#1a5330',
+            900: '#17442a',
+          },
+          blue: {
+            50: '#eff7ff',
+            100: '#daedff',
+            200: '#bde0ff',
+            300: '#8fcbff',
+            400: '#5aadff',
+            500: '#2f8cff',
+            600: '#1a6de0', // primary blue
+            700: '#1757b4',
+            800: '#184a90',
+            900: '#183f74',
+          },
+          navy: '#0b1f3a',
+          ink: '#0d1b2a',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Poppins', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Plus Jakarta Sans', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        card: '0 8px 24px -10px rgba(13, 27, 42, 0.18)',
+        soft: '0 10px 40px -20px rgba(13, 27, 42, 0.25)',
+      },
+      backgroundImage: {
+        'hero-gradient':
+          'linear-gradient(135deg, rgba(46,163,85,0.08) 0%, rgba(26,109,224,0.10) 100%)',
+        'cta-gradient':
+          'linear-gradient(120deg, #1a6de0 0%, #184a90 55%, #0b1f3a 100%)',
       },
     },
   },

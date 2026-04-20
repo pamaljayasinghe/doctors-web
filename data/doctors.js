@@ -1,0 +1,71 @@
+// Add new doctors by appending to this array. Each entry auto-generates a
+// details page at /team/<slug>.
+export const doctors = [
+  {
+    slug: 'dr-example-one',
+    name: 'Dr Example One',
+    role: 'General Practitioner',
+    image: '/images/doctors/doctor-1.svg',
+    credentials: 'MBBS, FRACGP',
+    gender: 'Female',
+    languages: ['English'],
+    specialInterests: [
+      "Women's health",
+      "Children's health",
+      'Preventive care',
+      'Chronic disease management',
+    ],
+    bio:
+      'Dr Example One is a dedicated family GP with a special interest in women’s and children’s health. She believes in building long-term, trusted relationships with her patients and delivering compassionate, evidence-based care for the whole family.',
+    education: [
+      'MBBS – University of [Replace]',
+      'Fellow of the Royal Australian College of General Practitioners (FRACGP)',
+    ],
+  },
+  {
+    slug: 'dr-example-two',
+    name: 'Dr Example Two',
+    role: 'General Practitioner',
+    image: '/images/doctors/doctor-2.svg',
+    credentials: 'MBBS, FRACGP',
+    gender: 'Male',
+    languages: ['English'],
+    specialInterests: [
+      "Men's health",
+      'Cardiovascular risk',
+      'Diabetes care',
+      'Skin checks',
+    ],
+    bio:
+      'Dr Example Two is passionate about preventive medicine and long-term wellbeing. He combines a strong evidence base with a practical, down-to-earth approach to patient care.',
+    education: [
+      'MBBS – University of [Replace]',
+      'Fellow of the Royal Australian College of General Practitioners (FRACGP)',
+    ],
+  },
+  {
+    slug: 'dr-example-three',
+    name: 'Dr Example Three',
+    role: 'General Practitioner',
+    image: '/images/doctors/doctor-3.svg',
+    credentials: 'MBBS, FRACGP',
+    gender: 'Female',
+    languages: ['English'],
+    specialInterests: [
+      'Travel medicine',
+      'Iron infusions',
+      'Mental health',
+      'Preventive care',
+    ],
+    bio:
+      'Dr Example Three is committed to delivering accessible, patient-centred healthcare, with special interests in travel medicine and chronic disease management.',
+    education: [
+      'MBBS – University of [Replace]',
+      'Fellow of the Royal Australian College of General Practitioners (FRACGP)',
+    ],
+  },
+];
+
+export function getDoctor(slug) {
+  return doctors.find((d) => d.slug === slug);
+}

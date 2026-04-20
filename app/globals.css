@@ -2,91 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+:root {
+  --brand-green: #2ea355;
+  --brand-blue: #1a6de0;
+}
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  body {
-    @apply font-sans text-medical-text antialiased;
-  }
+body {
+  @apply bg-white text-brand-ink antialiased;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 }
 
 @layer components {
-  .section-subtitle {
-    @apply text-sm font-semibold uppercase tracking-[3px] text-primary-500;
+  .container-px {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
   }
 
-  .section-title {
-    @apply font-heading text-3xl font-bold text-medical-dark md:text-4xl lg:text-[42px] lg:leading-[1.2];
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-brand-green-500 text-white shadow-card hover:bg-brand-green-600 focus-visible:ring-brand-green-500;
+  }
+  .btn-secondary {
+    @apply btn bg-brand-blue-600 text-white shadow-card hover:bg-brand-blue-700 focus-visible:ring-brand-blue-600;
+  }
+  .btn-outline {
+    @apply btn border border-brand-blue-600 bg-white text-brand-blue-700 hover:bg-brand-blue-50;
+  }
+  .btn-ghost {
+    @apply btn bg-white/80 text-brand-ink hover:bg-white;
   }
 
-  .gradient-teal {
-    background: linear-gradient(135deg, #00897b 0%, #009e9e 50%, #19cd9b 100%);
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full bg-brand-green-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-green-700 ring-1 ring-brand-green-200;
   }
 
-  .gradient-dark {
-    background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
+  .section {
+    @apply py-16 md:py-24;
   }
-}
 
-/* Swiper custom styles */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #00897b !important;
-  background: white;
-  width: 44px !important;
-  height: 44px !important;
-  border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 18px !important;
-  font-weight: bold;
-}
-
-.swiper-pagination-bullet {
-  background: #00897b !important;
-  opacity: 0.3 !important;
-}
-
-.swiper-pagination-bullet-active {
-  opacity: 1 !important;
-  width: 24px !important;
-  border-radius: 4px !important;
-}
-
-/* Smooth animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+  .heading-1 {
+    @apply font-display text-4xl font-bold leading-tight text-brand-navy md:text-5xl lg:text-6xl;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .heading-2 {
+    @apply font-display text-3xl font-bold leading-tight text-brand-navy md:text-4xl;
+  }
+  .heading-3 {
+    @apply font-display text-xl font-semibold text-brand-navy md:text-2xl;
+  }
+  .lead {
+    @apply text-base leading-relaxed text-slate-600 md:text-lg;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-soft;
+  }
+
+  .link-underline {
+    @apply relative text-brand-blue-700 font-medium after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-0 after:bg-brand-blue-600 after:transition-all hover:after:w-full;
   }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  padding: 10px 16px;
+  border-radius: 0 0 8px 0;
 }
-
-.animate-fade-in-up-delay-1 {
-  animation: fadeInUp 0.8s ease-out 0.2s forwards;
-  opacity: 0;
-}
-
-.animate-fade-in-up-delay-2 {
-  animation: fadeInUp 0.8s ease-out 0.4s forwards;
-  opacity: 0;
-}
-
-/* Placeholder image styling */
-.placeholder-img {
-  @apply bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center;
+.skip-link:focus {
+  left: 0;
 }
