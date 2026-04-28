@@ -26,9 +26,9 @@ export default function Hero() {
             </span>
           </h1>
           <p className="lead mt-5 max-w-xl">
-            A fully bulk-billed* modern family GP practice — compassionate,
-            evidence-based, patient-centred care for individuals and families at
-            every stage of life.
+            We are a modern family GP practice offering comprehensive general
+            medical services with a strong focus on prevention, early diagnosis
+            and long-term wellbeing.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <Link href="/contact#book" className="btn-primary">

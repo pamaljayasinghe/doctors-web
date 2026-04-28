@@ -26,11 +26,11 @@ export const site = {
   },
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
     { label: 'Services', href: '/services' },
     { label: 'Our Doctors', href: '/team' },
     { label: 'Patient Info', href: '/patient-information' },
     { label: 'Policies', href: '/practice-policies' },
+    { label: 'Vacancies', href: '/vacancies' },
     { label: 'Contact', href: '/contact' },
   ],
 };

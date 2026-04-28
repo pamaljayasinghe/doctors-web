@@ -13,7 +13,7 @@ import ServiceCard from "@/components/ServiceCard";
 import DoctorCard from "@/components/DoctorCard";
 import CTASection from "@/components/CTASection";
 import { services } from "@/data/services";
-import { doctors } from "@/data/doctors";
+import { getDoctors } from "@/lib/doctors";
 
 export const metadata = {
   title: "Home",
@@ -21,9 +21,11 @@ export const metadata = {
     "Doctors at Farm Gate — a modern family GP practice providing women’s, men’s and kid’s health, immunisations, iron infusions, travel medicine, pathology, telehealth and more across Australia.",
 };
 
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
   const featured = services.slice(0, 8);
-  const team = doctors.slice(0, 3);
+  const team = getDoctors().slice(0, 3);
 
   return (
     <>
@@ -95,11 +97,6 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-            <div className="mt-7">
-              <Link href="/about" className="btn-secondary">
-                Learn More <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] shadow-soft ring-1 ring-slate-100">
             <Image

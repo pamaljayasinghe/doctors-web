@@ -1,7 +1,6 @@
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import TopBar from '@/components/TopBar';
 import { site } from '@/data/site';
 
 export const metadata = {
@@ -91,7 +90,6 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <a href="#main" className="skip-link">Skip to content</a>
-        <TopBar />
         <Header />
         <main id="main">{children}</main>
         <Footer />

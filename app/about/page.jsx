@@ -57,20 +57,15 @@ export default function AboutPage() {
             <h2 className="heading-2 mt-4">Doctors at Farm Gate</h2>
             <div className="lead mt-4 space-y-4">
               <p>
-                Doctors at Farm Gate is a modern family GP practice dedicated to
-                providing high-quality, patient-centered healthcare. We offer
-                comprehensive general medical services with a strong focus on
-                prevention, early diagnosis and long-term wellbeing.
+                At Doctors at Farm Gate, we are a new general practice proudly
+                serving the Clyde community. Our vision is to build a small,
+                welcoming clinic where patients feel genuinely cared for and
+                supported, with compassion at the heart of every interaction.
               </p>
               <p>
-                Our team is committed to building trusted relationships and
-                delivering compassionate, evidence-based care for individuals
-                and families at every stage of life.
-              </p>
-              <p>
-                We aim to create a welcoming medical home supported by efficient
-                systems and contemporary healthcare technology to ensure
-                accessible, reliable and future-focused care for our community.
+                As we continue to grow alongside our community, we remain
+                committed to delivering high-quality, patient-centred general
+                practice services in a friendly and inclusive environment.
               </p>
             </div>
           </div>

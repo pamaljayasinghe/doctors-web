@@ -48,8 +48,8 @@ export default function ContactPage() {
 
           <div id="book" className="lg:col-span-3">
             <div className="card">
-              <h3 className="heading-3">Request an appointment</h3>
-              <p className="mt-2 text-sm text-slate-600">Appointments can be booked by phone or via this form. We’ll confirm by phone or email.</p>
+              <h3 className="heading-3">Send us a message</h3>
+              <p className="mt-2 text-sm text-slate-600">You can use our contact form for general or administrative enquiries.</p>
               <div className="mt-6">
                 <ContactForm />
               </div>
