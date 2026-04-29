@@ -7,11 +7,11 @@ export const site = {
     'Doctors at Farm Gate is a modern family GP practice delivering compassionate, evidence-based healthcare across Australia — general check-ups, women’s and men’s health, kid’s health, travel medicine, iron infusions, immunisations, pathology, telehealth and chronic care plans.',
   url: 'https://www.doctorsatfarmgate.com.au',
   email: 'info@doctorsatfarmgate.com.au',
-  phone: '(00) 0000 0000',
-  phoneHref: 'tel:+61000000000',
+  phone: '(03) 5993 5990',
+  phoneHref: 'tel:+61359935990',
   emergency: '000',
   address: {
-    line1: '[Insert Practice Address]',
+    line1: '5 Riverland Rd, Clyde VIC 3978',
     line2: 'Australia',
   },
   hours: [
