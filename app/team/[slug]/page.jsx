@@ -33,9 +33,9 @@ export default function DoctorDetailPage({ params }) {
       <section className="section">
         <div className="container-px grid gap-10 lg:grid-cols-3">
           <div className="lg:col-span-1">
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl ring-1 ring-slate-100 bg-brand-blue-50">
+            <div className="relative mx-auto aspect-[3/2] w-full max-w-sm overflow-hidden rounded-2xl ring-1 ring-slate-100 bg-brand-blue-50 lg:mx-0">
               {doctor.image ? (
-                <Image src={doctor.image} alt={`Portrait of ${doctor.name}`} fill sizes="(min-width:1024px) 30vw, 100vw" className="object-cover" />
+                <Image src={doctor.image} alt={`Portrait of ${doctor.name}`} fill sizes="(min-width:1024px) 24rem, 100vw" className="object-cover object-top" />
               ) : null}
             </div>
             <div className="mt-5 card">

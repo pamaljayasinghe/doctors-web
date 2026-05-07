@@ -32,7 +32,7 @@ export const services = [
       "Mental health & lifestyle support",
     ],
     image:
-      "https://images.pexels.com/photos/6749765/pexels-photo-6749765.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/6129444/pexels-photo-6129444.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     slug: "kids-health",
@@ -49,7 +49,7 @@ export const services = [
       "Parenting & behavioural support",
     ],
     image:
-      "https://images.pexels.com/photos/8770704/pexels-photo-8770704.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/7653115/pexels-photo-7653115.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     slug: "travel-medicine",
@@ -66,7 +66,7 @@ export const services = [
       "Travel medical kit guidance",
     ],
     image:
-      "https://images.pexels.com/photos/7578810/pexels-photo-7578810.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/8770697/pexels-photo-8770697.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     slug: "iron-infusion",
@@ -134,7 +134,7 @@ export const services = [
       "Doctor-led follow-up",
     ],
     image:
-      "https://images.pexels.com/photos/19438563/pexels-photo-19438563.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/6622519/pexels-photo-6622519.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     slug: "weight-control",
@@ -151,7 +151,7 @@ export const services = [
       "Ongoing progress reviews",
     ],
     image:
-      "https://images.pexels.com/photos/19438560/pexels-photo-19438560.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/5622219/pexels-photo-5622219.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     slug: "care-plans",
@@ -168,7 +168,7 @@ export const services = [
       "Allied health coordination",
     ],
     image:
-      "https://images.pexels.com/photos/8770695/pexels-photo-8770695.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/6285399/pexels-photo-6285399.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
   {
     slug: "telehealth",

@@ -5,13 +5,13 @@ import { ArrowRight } from 'lucide-react';
 export default function DoctorCard({ doctor }) {
   return (
     <article className="card group overflow-hidden p-0">
-      <div className="relative aspect-[4/5] w-full overflow-hidden bg-brand-blue-50">
+      <div className="relative aspect-[3/2] w-full overflow-hidden bg-brand-blue-50">
         <Image
           src={doctor.image}
           alt={`Portrait of ${doctor.name}`}
           fill
           sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
         />
       </div>
       <div className="p-6">
